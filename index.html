@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochá</title>
+    <link rel="stylesheet" href=".//style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="./imagenes/logo.png">
+</head>
+
+<body>
+    <section class="container-fluid">
+
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg fondo-header">
+            <div class="container-fluid">
+                <svg class="navbar-brand" width="59" height="59" viewBox="0 0 59 59" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="59" height="59" fill="url(#pattern0)" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_35_9" transform="scale(0.00847458)" />
+                        </pattern>
+                        <image id="image0_35_9" width="118" height="118"
+                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAB2CAYAAAAdp2cRAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA9PSURBVHgB7Z1tcFxlFcfP7qZ1m0QbkKRRKr1pgLZTLOkgCOgMidOiToukjlOYodDED4Kgw4s4+sWhkQ+CtlBGq2WcseFt1A5Dw9B+sYwJo7RQcLqtrXmhbRZ5S1tGg2bDGkmW83/2Pje7m325e/e+PHd7fzPL3mzuLun+7znPec5zznND5HMOHz7cUFdXp01PT7eFQqG2cDi8kF/WUqmUpp/SoD9yifNjnN8zzueOz8zMHNFfiyeTydjq1avHyceEyGcMDg62RyKRy/mwjQVp52eNnCHOjxgLP8AXzZEVK1YMkI9QXlhYZDQa7WQxr2MhOym/9bkBLHiAH32Tk5PPq27RSgoLMWtra9vZWu5mMdvIOzGL0YfHsmXLniAFUUpYdrNaTU3NZh7v7iE1xcxHXHfXPeyu46QISgirj5sP6GOmb2GBe1ngJ1QYjz0VtloEzUW34G4vLdgTYeFyWdBd1SZoLroFe+KiXRUWQVF9ff3dPhtDK4bn1lsuueSSHnIR14SF2+V/4C5ybt6pOnG+oLvdGn8dF1bPDGEcvYcC4J63X3rppfeSwzgqLMZSttJ+OnettBCw3g4nx94wOcSJEyc2s6iHKRA1H7jgDw8NDTnmxRwR9o033niAo8FeOocCJAs0sFt+FN8VOYCtrlgfTx/l8bSLAsoB+eduO/PPtgmrj6d7+LCNAqwQ43F3g13jri3CBkGSbdgWVFUsbCCq7dgibkXCBqI6RsXiWo6KESjpY6pGAXYj4hV8x2QRy8LyQjjSg0Gg5BxtmGGQRSwJq8+9OinAUTBttDrPLXuMHRkZQbnKdgpwk65yS3DKElYPlpAmDDJK7oLy2NXlBFNluWI9Ag5EdR8Eqv3lBFOmhWUXjIFcowCv0LD8afZkU65YXyTvpwDP0ee3A6XOM2WxeuVDgAJACzMuuaSweritkU/o3/8n+tbXv0q7n/wtRWIPiQf9799URWjRaLTkOm5RYREFs+lvIR9x/OhR8bz798/SseG3hKjhU7upmmCrvRvaFD2nxAdsIZ+xcdOtVFtXJ47/ODAmnkP/OcWPkwXfAyvHAxdB6O39frDwBpTvFjuhoLD6FbGZfEbTokW0vvOb4vhYfEI8QOidF/OeDwvf8cg28Xj92R4K83nhkSdJdVCTjaC20O8LClvqilCZdRs6Das9NPSBeIbV0kfJOedqrUuNc3+39yQlktMUmnyXQmN/JdVBF0Wh3+UVFleCn6v06+rqqaW1VRz/OfYv4/XQ+6/nPXfjptvE8ZnxKdr7yllxHH77RVKdYlabV1geW7vI51x59bXiGRYIwUAo8W7ec9d3dlIju3Dwqm7hNP1h0XFZFQpZ7Rxh/Tq25iItFkhhaapwUNSx5nrxPDr2oXiA0NjLpDq61Wq5r88R1o+RsB10rF1rHBsBF8Zlf9CV+0I+V3wdVQFnTo8Zx3XRSPogsqDg+XDFMoiSFgt37IfkBua1udmoLGHZpLuoShL9+/r6xHNTw3xqaU4LmjpvZdH31HMg5VMaFixYkGWQWcKy8jeSz0kkEvTwT7dQ/FQ68PlK2/niOfWJ8yj1qaVUrbB2WWnGGnkwOjraMDU15ctyl/jJk3Ts6BF67ZWDRkoRwFJvam8Wx6mLvkHE4hbizOnTdObMaXEMKzco8h6VwCYscMeym8AQNplMdrLq5AcgwqEDLwshR1nUSbbSXG64ulGIKix16caS1jrw4n7j+DIt7ZJ9ZuFi2yR+7sUPhrB+cMPH2Sp3P/N0llVmgiCpg13vF5cvpJWfX0Wp81fSzAVf4H9ltOjn4kLZu+c5cQxrNYTFe31EKBTCONuL45qM19tJYSDo7qefynoNIlzFIrYsPo9WXraKGpesIKr9LKX4MVNCTAlEfeBHPzSs/sc3t4jn1AVXUKrxCvITLCwsthvHQlg9LaVsLVOmqLDK9exmERQ1fm45pRavNVxmispjb98e8blS1JvZdWNchvueWbyWfEgDtESFhRAWm0uSosCipKiw0Ae7LhbPqcVraOZCa18+PnPHI1uzXDpElWPyzIrbfRM05aJraQirbFIi0/0aorKbrERUuN6zp2cj4O93XiTG1VTzl9Ofa9KNKwo2EDXGWGUt9vjf01aFoEhOQypxk7hQpKgycq5deAHNmIic/QAbaTuea/T5q0YKkkhMGCLI7JFIC1bgJg8dPCCecaF8+2sXiuNpH7vePGiiYY7nr8pa6+TE7PzUyPdW4CYxpspAychIwUqrR1QBNuZGRkIjRamtrzOOjaW3PFUQAdlgt3WlhUV1Q1NTegH8uL6UJlZcCiyYl6JJX0wHxppr4j2qNvQt9MOXk8JceW26EgJCoBoChMaPkxWwNCcvlEM+q5Qok4VhVlfpJqurrpktcTHqkd572bJLbl+brpQwU8HoY7QwrwooLezKVavEA5z+/6fTL8IdT39IVkAFo6xvSsxfMvt5VQQbqxYaHh4eJR8sriOi1Vpbqa5mikIsBPLBVkGSIjExIeqiUP4iPsvfSYlc4hC23BRrgPqM15CHoNohfvIE+ZGVq5SOORs8ExYZoF9t25p3kdwPYJzeuuM3SAaQinhWMrHr8Z2+FRUg1TmARi5F8cxiZQ64fc1a6tCnIE4huu3G/sLRrz1Zq1/2/VNkwkZPqTv/hbAofvJsyoNskJzOOEV4JEahefin2lteqnK5qufCojIQtUyOMtlE4TdfJbuQGbAJXn3C3964qDkrXakAcc/msXduvs0o96wG0EWAeTGGFkTMHgsdq+EsRTzjXqsBFkEgiCQKHoiY0Qu08ZZbyQtwP9waXuJ504t64iV8dcNi8SV87777S54vAqB39pPXIGhC8AS6vnOHsNKEcMlHxRQOQeFZUaf1tDjHI3E/gMV6ch/UzPmfqeAp0UiReQfJa4699ZFxfBn/3ZreronFiu7b76D+/ftp9zNPGeJi6XFd5wZyE7bYGBYBYuQB2tL0F4IvIGFmPhtVY61i9J3Z7rvG5uY5v4cL7nn4F0bnHsRNuD9fj4cjkYgnwjY1zwYXptKKkXS9r9fIBX9t6dKCWafMDU7gpj1Im8bD8+bNi5MHtCyd7TiPnzLXYJz6pPdVhLJEp2lRc9HzsGmJ5LWD7g4hyWQyVtPS0jLOU544uTzlkY3GMpo0NQ7V8fLa+3+jSvhJ74nZ+ikLyPeWigsyL1zMd10kjo47kVKcmZl5iSNjjVwGAQe63Ao1WeUiGpfffIGsgvIaWTVRKXDFKsIxk8j2yE4AjLOubyiCqBLCJvQMTsmlMLRE8iNkcfsA2S9r1WJRJ4WsEyLdUn/rhHcLHAP4jxAWkTGLS24jCtUe2SaOMQ6ZWeNEa2Ml89mb25vJCrgY+vU9o6689pqS55/N2AMj0y07jZzliMyEvv+t6/PZ9JWfHqsw/zMzLUh95kvkBZkuvGNN6RaTQwcOGMcuuu1xuZexkXLicfZ58gCZmYE73qc3HxcF0x4PomO54WajWI0q7llQUyU75M2cbxdsrS/J48xc4gB5ACxWVg1ipxdTVuty7yq27ZPjspkUYWaHoBnrtgseTvfIY2OhPRqN9k1NTWHff9dTPPiy0K8qrRZb0xYD/TZopQxVMPVBEGRsr1eCbGstPs1BM3WmtbY7XESQyeTkpOF1DWExnx0ZGYl5sTkm0nD7+AvBFj6wWnwZpZa90EoZQUeAxcLxn/1hdLZtxCTrea5d7O/qZ0F7H99p/IwL1q3lO9bt+cz7z4ZzfvkYeQQS6ABW+/MHe0q7ZHSeY4sfi2ADknKA9RVKouBvRQ3Xjm1bjdc23rIpaxs/p8l0w+LnzB/0XlksvHuScceXA8sF6zo7WezvlnxPmBMWVvcWhjuW1RC5YEx9iK1a/v7XvU/OsT4Iuq/vOdq7Z09WYR5ELTWc2Ex82bJlLZkvZBWzwR0PDg4+xlkoR+4bXoqNmzaJLJR0yXX19SWDlZklN1AYjVVnyx9v0XNr9N1mINdcpagQSoqKiPcfnEyB283dY0quLTtdw5ULe9qB3NfmZCX025yNkkfk7hEBsc1EopVYbtb/n0XNzCdjro2EBBYqzoyN5S2ZRc4bqznrNmzwpM6Yp6otubdHy5tu4iCq38sdxnPFRU65i8fgUoEIdgWvJCuFJESm+y2GrHHChtcd11/vWeE469S7fPny7tzX8wqrwp2xcsWFm0sHJCWmD7gdy+DjZeWTISSmNC/obZqZQMB6HhJq2XKxFKe1tApBRYOYAl0Ahe6cVTBB7LXVAkTIu3buzNrn0KzAGHNhvcUElj23EFRaKYS8iQMft8tZrICxla21I9/vCgqr0v3sMuuIJDJZgMyO1npxQesRRXBnXyf67ykhMsZOuFwk9HOX8PB5d3Hwo1iNcEHyja2Soks6KlgtgFvGNEhWAeYDrhHbEEDwXJFRDYkdaLD1baF+IYjqRruJXRQaWyVFhVXlRsD333WnsbG009x13w98IW4xawVFC4rxRv4Az7JRErfyrRhfFe97FbAmPaXu/lxydV3PRsFqNQpQgTlZpnyUbAFANoqvkG4KUAKzWpjq7cA8ycsFgoA00MDM3Z6B6UKnwCV7jikXLDHdjaW7ZEyGPen1OceR371pymqz06PkeynAVdgFl4yCcym7f5L/B70ItynAFfBdcyJiO5WJ5WLi4eHhXqqCu1YqTh+Pq5aS1pY7nufPn49bbnnSqXeOEJucnLQ8zayo/F9POWKhQKMAO4nry3FxskjFfR2BuLZTsajAloadQFzbsEVUYMuuIvo0CPOsYMy1TswuUYFt28XgD+KACuL2UUBZsKBPcKBkm6jAkd5Jds1bvCph9Rv6EtwWshnHmmKHhobuCYVCEFfprek9BGnCe5HwIQdwtNs5CKoKErdzPM2Ho1uy4Q/HikSw5DcLvgseT1c7KSpwbX8CvepxF5271gsr7Ta7nloprm88cQ4GVhhLH0smk9sz2xydxv0dRSg99vITBK7qRQQUdPOj22m3mw9PhJVAYI6cd8l7nlYLuqA9brndfHgqrES/R3yX3y1YBUElSggryXDRuLW4Rv5gXK+97vXC5RZCKWEzYZFhwTfyYSepx7i+6RmmLgNuBkVmUVZYCW5LHY1GO3WR28m7TBbE7MNeShzh9qkoZibKC5sLxuNIJHK53iyG25Br5AD8+XF+GuALKjY9PX1EhXGzHHwnbC66RUuBkcKE6A24L67+rOV5G6xPWlxcf3wA94qNuROJRFx1iyzFx+u2Q0wGJH1QAAAAAElFTkSuQmCC" />
+                    </defs>
+                </svg>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link active diseño text-light " aria-current="page"
+                                href="#seccion-principal">inicio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active diseño text-light" aria-current="page"
+                                href="#seccion-tipos">tipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active diseño text-light" aria-current="page"
+                                href="#seccion-historia">historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active diseño text-light" aria-current="page"
+                                href="#seccion-formulario">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <main>
+            <section id="seccion-principal" class="pagina-principal">
+                <div class="titulo-principal">
+                    <h1>Descubre la <br> magia en cada <br> grano de café. </h1>
+                </div>
+
+                <!-- Carousel -->
+
+                <div id="carouselExampleAutoplaying" class="carousel slide carrusel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/carousel 5.jpg" class="d-block w-100 imagen-carousel"
+                                alt="imagen de cafe">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="./imagenes/carousel 3.jpg" class="d-block w-100 imagen-carousel"
+                                alt="imagen de cafe">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </section>
+            <!-- Tipos de Cafe -->
+            <section class="desktop-responsive">
+
+                <section id="seccion-tipos" class=" tipos-cafe">
+                    <div class="titulo-tiposCafe">
+                        <h2 class="titulo-tipos"> LOS <br> DIFERENTES <br> TIPOS DE CAFÉ </h2>
+                        <h4 class="subtitulo">Estos son algunos de los granos de café mas conocidos </h4>
+                    </div>
+                    <div class="container tipos-cafeDesktop">
+                        <div>
+                            <p class="nombre-cafes">Arábica (Coffea arabica)</p>
+                            <img class="imagen-tipos" src="./imagenes/Arábica__Coffea_arabica_-removebg-preview (1).png"
+                                alt="Arábica (Coffea arabica)">
+                        </div>
+                        <div>
+                            <p class="nombre-cafes">Robusta (Coffea canephora)</p>
+                            <img class="imagen-tipos" src="./imagenes/c3.png" alt="Robusta (Coffea canephora)">
+                        </div>
+                        <div>
+                            <p class="nombre-cafes">Geisha (Coffea arabica)</p>
+                            <img class="imagen-tipos" src="./imagenes/image.png" alt="Geisha (Coffea arabica)">
+                        </div>
+                    </div>
+
+                </section>
+                <!-- Secciones -->
+
+                <section class="coffe-section">
+                    <div class="container  seccion-cafes">
+
+                        <div>
+                            <img class="imagen-cafes" src="./imagenes/plantas.png" alt="planta del cafe">
+                            <h3>Finest beans from plants</h3>
+                            <p class="frase">"Explora el encanto de cada grano. Delicadeza en cada sorbo, un viaje de
+                                sabores
+                                inigualables.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="imagen-cafes" src="./imagenes/cafetera.png" alt="cafetera">
+                            <h3>Finest Roasted</h3>
+                            <p class="frase">"Disfruta de la esencia del café recién tostado, una experiencia que
+                                despierta los
+                                sentidos."
+                            </p>
+                        </div>
+                        <div>
+                            <img class="imagen-cafes" src="./imagenes/cafe.png" alt="cafe">
+                            <h3>Signature flavour</h3>
+                            <p class="frase">"Saborea la excelencia en cada sorbo. El toque distintivo que hace de cada
+                                taza una
+                                experiencia
+                                única."</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- historia -->
+
+            <section id="seccion-historia" class="historia-cafe ">
+                <h2 class="titulo-historia">UN POCO DE HISTORIA</h2>
+                <div class="historia-cont ">
+
+                    <div class="container contenedor-historia col-md-6">
+                        <p class="texto-historia">Se remonta a la región de Etiopía, donde, según la leyenda, un pastor
+                            descubrió las
+                            propiedades
+                            energizantes de los granos de café. Desde el siglo XV, el café se extendió por Oriente
+                            Medio,
+                            donde
+                            se cultivaba y se utilizaba en bebidas. A mediados del siglo XVII, los cafés se habían
+                            establecido
+                            en Europa, convirtiéndose en lugares sociales. En el siglo XVIII, las plantaciones de café
+                            se
+                            desarrollaron en América Latina, contribuyendo al auge del café como una de las bebidas más
+                            populares del mundo. La historia del café está entrelazada con la cultura y el comercio,
+                            convirtiéndose en una fuerza poderosa en la economía global.</p>
+                    </div>
+                    <div class="contedor-fotoHistoria col-md-6">
+                        <div class="historia-foto"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Formulario -->
+
+
+        <section id="seccion-formulario" class="formulario">
+            <div class="container container-formulario">
+
+                <div>
+                    <h2 class="titulo-formulario">CONTACTO</h2>
+                </div>
+
+                <form class="px-1 " action="direccionDestinoDeLainfo" method="post">
+                    <div class="contacto">
+                        <div>
+                            <label class="form-label mx-2 " type="nombre">
+                                Nombre
+                            </label>
+                            <input class="form-control-lg input-1" id="nombre" type="text" />
+                        </div>
+
+                        <div>
+                            <label class="form-label mx-2" type="apellido">
+                                Apellido
+                            </label>
+                            <input class="form-control-lg" id="apellido" type="text" />
+                        </div>
+                        <div>
+                            <label class="form-label mx-3" for="email">Email</label>
+                            <input class="form-control-lg" type="email" id="email"
+                                placeholder="ejemplo@ejemplo.com"></input>
+                        </div>
+                        <div>
+                            <input class="input-enviar my-3 " type="submit" value="ENVIAR" formTarget="_blank"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Footer -->
+        </section>
+        <section>
+            <footer class="footer-section">
+
+                <div class="nombre">
+                    <img class="image-footer" src="./imagenes/logo.png" alt="Logo de Mochá">
+                    <h2 class="titulo-footer">Mochá</h2>
+                </div>
+                <div>
+                    <ul class="links">
+                        <li>
+                            <a class="links-footer" href="#seccion-principal">inicio</a>
+                        </li>
+                        <li>
+                            <a class="links-footer" href="#seccion-tipos">tipos</a>
+                        </li>
+                        <li>
+                            <a class="links-footer" href="#seccion-historia">historia</a>
+                        </li>
+                        <li>
+                            <a class="links-footer" href="#seccion-formulario">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="copyright">Copyright © Creado por Lorenzo Segada Lopez</p>
+                </div>
+
+            </footer>
+
+        </section>
+
+
+
+    </section>
+
+
+    <script src="./script.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* Pagina principal */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Boostrap */
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.carrusel {
+    display: none;
+}
+
+.fondo-header {
+    background-color: #E0AC85;
+}
+
+.diseño {
+    font-family: 'Gowun Batang', serif;
+}
+
+.pagina-principal {
+    display: flex;
+    align-items: center;
+    background-color: #005F59;
+    margin-top: 10px;
+    height: 90vh;
+    padding: 20px;
+}
+
+.titulo-principal {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-principal h1 {
+    font-size: 40px;
+}
+
+/* Tipos de cafe*/
+
+.tipos-cafe {
+    background-color: #E0AC85;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.titulo-tipos {
+    font-family: 'Gowun Batang', serif;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.subtitulo {
+    font-family: 'Gowun Batang', serif;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.nombre-cafes {
+    font-family: 'Gowun Batang', serif;
+    font-size: 18px;
+}
+
+.imagen-tipos {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.tipos-cafe div {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.coffe-section {
+    background-color: #FED1A8;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coffe-section div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.imagen-cafes {
+    height: 130px;
+}
+
+
+/* Historia del cafe */
+
+
+.historia-cafe {
+    background-color: #F9E9DC;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.titulo-historia {
+    font-family: 'Gowun Batang', serif;
+    color: #764538;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.historia-cafe p {
+    font-family: 'Gowun Batang', serif;
+    color: #764538;
+    padding: 10px;
+}
+
+.historia-foto {
+    width: 300px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./imagenes/home-image-1-1024x1024.png);
+}
+
+.contenedor-historia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contedor-fotoHistoria {
+    display: flex;
+    justify-content: center;
+}
+
+/* Formulario */
+
+.formulario {
+    background-color: #764538;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+
+.h2-contacto {
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    color: white;
+}
+
+input {
+    border: none;
+    outline: none;
+    margin: 0;
+    width: 100%;
+}
+
+.titulo-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Gowun Batang', serif;
+    padding-top: 20px;
+}
+
+.input-enviar {
+    border-radius: 10px;
+}
+
+
+
+/* Footer */
+
+.footer-section {
+    background-color: #764538;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-top: 0.01cm solid black;
+}
+
+.image-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.titulo-footer {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+.nombre {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.links-footer {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.copyright {
+    color: white;
+    font-family: 'Gowun Batang', serif;
+
+}
+
+
+
+
+/* Responsive Tablet */
+
+@media (min-width:768px) and (max-width:922px) {
+
+    /* Responsive Carousel */
+
+    .pagina-principal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        height: 30rem;
+    }
+
+
+
+    .titulo-principal {
+        display: none;
+    }
+
+    .carrusel {
+        display: flex;
+        height: 32rem;
+    }
+
+    /* Responsive Tipos de Cafe */
+
+    .imagen-tipos {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Responsive Historia */
+
+    .historia-cafe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32rem;
+    }
+
+    /* Responsive Formulario */
+    .formulario {
+        height: 40vh;
+    }
+
+    input {
+        display: flex;
+        justify-content: center;
+    }
+
+    .historia-cont {
+        display: flex;
+    }
+
+}
+
+
+
+/* Responsive Desktop */
+
+@media only screen and (min-width: 923px) {
+
+    /* Responsive Carousel */
+
+    .pagina-principal {
+        padding: 0;
+        height: 50rem;
+    }
+
+    .titulo-principal {
+        display: none;
+    }
+
+    .carrusel {
+        display: flex;
+        height: 50rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    /* Responsive Tipos de cafe */
+
+    .desktop-responsive {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .tipos-cafeDesktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 25rem;
+    }
+
+    .subtitulo {
+        display: none;
+    }
+
+    .imagen-tipos {
+        width: 300px;
+        height: 300px;
+    }
+
+    .seccion-cafes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 25rem;
+    }
+
+    .frase {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* Responsive Historia */
+
+    .historia-cont {
+        display: flex;
+        height: 50rem;
+        align-items: center;
+    }
+
+    .historia-foto {
+        height: 42rem;
+        width: 42rem;
+    }
+
+    .texto-historia {
+        font-size: 25px;
+    }
+
+    /* Responsive Formulario */
+    .container-formulario {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+    }
+
+    /* Responsive Footer */
+
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 10rem;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+
+}
